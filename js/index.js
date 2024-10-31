@@ -13,13 +13,13 @@ $(document).ready(function () {
         {
             $('#sideNav').animate({left: `-${navSize}`} , 500)
             $('#menuBtn').removeClass('fa-times')
-            $('#navList li').animate({ opacity: "0", paddingTop: "500px"}, 1000)
+            $('#navList li').animate({paddingTop: "500px"}, 1000)
         }
         else
         {
             $('#sideNav').animate({left: `0px`} , 500)
             $('#menuBtn').addClass('fa-times')
-            $('#navList li').animate({ opacity: "1", paddingTop: "0px"}, 1500)
+            $('#navList li').animate({paddingTop: "0px"}, 1500)
         }
     })
     const updatePageTitle = (title) => {

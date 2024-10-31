@@ -50,7 +50,7 @@ body
 {
     padding-bottom: 25px;
     padding-top: 500px;
-    opacity: 0;
+    /* opacity: 1; */
 }
 .navs ul li a 
 {
@@ -66,12 +66,12 @@ body
 .menu
 {
     background-color: #f8f6f6;
-    width: 40px;
+    width: 60px;
     height: 100%;
 }
 .menu img
 {
-    width: 30px;
+    width: 48px;
 }
 .menu-logo
 {
@@ -136,6 +136,7 @@ body
     display: none;
     z-index: 9995;
     background-color: rgb(14, 14, 14); 
+    padding-left: 40px;
 }
 .fa-city 
 {
@@ -218,11 +219,20 @@ body
 {
     color: #9d9b9b !important;
 }
+#rowData {
+    margin-left: 40px;
+    margin-right: 0px !important;
+}
 ::-webkit-input-placeholder 
 {
     text-align: center;
 }
-#rowData {
-    margin-left: 40px;
-    margin-right: 0px !important;
+
+@media (max-width: 500px) {
+    .menu {
+        width: 40px;
+    }
+    .menu img {
+        width: 30px;
+    }
 }
