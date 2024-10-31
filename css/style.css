@@ -1,0 +1,234 @@
+body
+{
+    font-family: "Merienda", cursive;
+    background-color: #000000f2;
+    overflow: hidden;
+}
+#sideNav
+{
+    background-color: aqua;
+    width: 310px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    
+}
+.navs
+{
+    background-color: #000;
+    width: 250px;
+    
+}
+.navs-social-icons 
+{
+    position: absolute;
+    bottom: 50px;
+    left: 8px;
+}
+.navs-social-icons a
+{
+    padding-left: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.navs-social-icons span 
+{
+    color: #999;
+}
+.navs ul
+{
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 25px;
+    height: 50%;
+    overflow: hidden;
+    
+}
+.navs ul li 
+{
+    padding-bottom: 25px;
+    padding-top: 500px;
+    opacity: 0;
+}
+.navs ul li a 
+{
+    text-decoration: none;
+    color: #f9f6f6 !important;
+    font-weight: 500;
+    font-size: 19px;
+}
+.navs ul li a:hover
+{
+    color: #b1acac !important;
+}
+.menu
+{
+    background-color: #f8f6f6;
+    width: 60px;
+    height: 100%;
+}
+.menu img
+{
+    width: 48px;
+}
+.menu-logo
+{
+    padding: 25px 0;
+    padding-left: 5px;
+}
+.menu-toggel 
+{
+    cursor: pointer;
+}
+.menu-toggel i 
+{
+    font-size: 25px;
+}
+.menu-social-icons 
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 11;
+}
+.menu-social-icons  i
+{
+    cursor: pointer;
+}
+
+#searchContainer .form-control
+{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px rgba(255,255,255,.7);
+    color: #fff;
+    font-weight: 800;
+}
+
+.post
+{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer
+{
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+    font-weight: 800;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: top 1s;
+    cursor: pointer;
+
+}
+.post:hover .layer
+{
+    top: 0%;
+}   
+#searchContainer
+{
+    display: none;
+    z-index: 9995;
+    background-color: rgb(14, 14, 14); 
+}
+.fa-city 
+{
+    color: #e65a50ab;
+}
+.fa-bowl-food 
+{
+    color: #9ee650ab;
+}
+.recipes-info 
+{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.tags-info
+{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.btn-success 
+{
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.youtube 
+{
+    background-color: #F70000;
+}
+#contact .form-control 
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 800;
+}
+#contact input 
+{
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+}
+.is-invalid
+{
+    border-color: #dc3545 !important;
+}
+.is-valid
+{
+    border-color: #28a745 !important;
+}
+.alert
+{
+    display: none;
+}
+
+#loadingScreen
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 999999;
+}
+#loadingSite
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 999;
+}
+.text-muted
+{
+    color: #9d9b9b !important;
+}
+::-webkit-input-placeholder 
+{
+    text-align: center;
+}
+
+/* @media screen 767{
+    
+} */
+
+#rowData {
+    margin-left: 60px;
+    margin-right: 0px !important;
+}
