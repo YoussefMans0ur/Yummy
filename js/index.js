@@ -13,13 +13,13 @@ $(document).ready(function () {
         {
             $('#sideNav').animate({left: `-${navSize}`} , 500)
             $('#menuBtn').removeClass('fa-times')
-            $('#navList li').animate({paddingTop: "500px"}, 1000)
+            $('#navList li').animate({ opacity: "0", paddingTop: "500px"}, 1500)
         }
         else
         {
             $('#sideNav').animate({left: `0px`} , 500)
             $('#menuBtn').addClass('fa-times')
-            $('#navList li').animate({paddingTop: "0px"}, 1500)
+            $('#navList li').animate({ opacity: "1", paddingTop: "0px"}, 1500)
         }
     })
     const updatePageTitle = (title) => {
@@ -109,6 +109,7 @@ $(document).ready(function () {
         getTop();
         $('#searchContainer').css('display', 'none')
         $('#rowData').css('display', 'flex')
+        let maxWords = window.innerWidth <= 500 ? 8 : 10;
         rowData.innerHTML = ``;
         for (let i=0; i<responseCategories.categories.length; i++) {
             rowData.innerHTML += `<div class="col-md-3 shadow">
@@ -119,7 +120,7 @@ $(document).ready(function () {
                             <div class="d-flex h-100 align-items-center">
                                 <div class="info p-2">
                                     <h2 class="fw-bold">${responseCategories.categories[i].strCategory}</h2>
-                                    <p>${responseCategories.categories[i].strCategoryDescription.split(' ').splice(0,10).join(' ')}</p>
+                                    <p>${responseCategories.categories[i].strCategoryDescription.split(' ').splice(0,maxWords).join(' ')}</p>
                                 </div>
                             </div>
                         </div>

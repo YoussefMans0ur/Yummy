@@ -50,7 +50,7 @@ body
 {
     padding-bottom: 25px;
     padding-top: 500px;
-    /* opacity: 1; */
+    opacity: 0;
 }
 .navs ul li a 
 {
@@ -127,9 +127,17 @@ body
     cursor: pointer;
 
 }
+.layer h2,p {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
 .post:hover .layer
 {
     top: 0%;
+}   
+.post:hover .layer h2, .post:hover .layer p
+{
+    opacity: 1;
 }   
 #searchContainer
 {
