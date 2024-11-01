@@ -267,19 +267,20 @@ $(document).ready(function () {
         rowData.innerHTML = `<div class="col-md-4 text-white">
                 <img src="${meal.strMealThumb}" class="w-100">
                 <h2 class="mt-3">${meal.strMeal}</h2>
+                <div class="mt-4">
+                    <p class="h5">Area: <span class="ps-1 text-muted">${meal.strArea}</span></p>
+                    <p class="h5">Category: <span class="ps-1 text-muted">${meal.strCategory}</span></p>
+                </div>
             </div>
             <div class="col-md-8 text-white text-start ps-3">
                 <h2>Instructions</h2>
                 <p class="text-muted">${meal.strInstructions}</p>
-                <p class="h5">Category: <span class="ps-1 text-muted">${meal.strCategory}</span></p>
-                <p class="h5">Area: <span class="ps-1 text-muted">${meal.strArea}</span></p>
                 <h3 class="h2 mt-4">Recipes:</h3>
                 <ul id="mealRecipes" class="d-flex flex-wrap p-0"></ul>
                 <h3 class="h2 mt-1">Tags:</h3>
                 <ul id="mealTags" class="d-flex p-0"></ul>
                 <a class="btn btn-success text-white mx-1" target="blank" href="${meal.strSource}">Source</a>
                 <a class="btn btn-outline-danger youtube text-white" target="blank1" href="${meal.strYoutube}">Youtube</a>
-                
             </div>`
         document.getElementById('mealRecipes').innerHTML = mealRecipes;
         document.getElementById('mealTags').innerHTML = mealTags;
