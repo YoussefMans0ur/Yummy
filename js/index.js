@@ -294,27 +294,27 @@ $(document).ready(function () {
             <div class="row gy-3">
                 <h2 class="text-white mb-5">Contact Us</h2>
                 <div class="col-md-6 mb-2">
-                    <input id="userName" class="form-control" placeholder="Enter Your Name">
+                    <input id="userName" class="form-control" placeholder="Name">
                     <div id="nameAlert" class="alert mt-1 alert-danger">Special Characters and Numbers not allowed</div>
                 </div>
                 <div class="col-md-6 ">
-                    <input id="userEmail" class="form-control" placeholder="Enter Email">
+                    <input id="userEmail" class="form-control" placeholder="Email">
                     <div id="emailAlert" class="alert mt-1 alert-danger">Enter valid email. *Ex: xxx@yyy.zzz</div>
                 </div>
                 <div class="col-md-6 ">
-                    <input id="userPhone" class="form-control" placeholder="Enter Phone">
+                    <input id="userPhone" class="form-control" placeholder="Phone">
                     <div id="phoneAlert" class="alert mt-1 alert-danger">Enter valid Phone Number</div>
                 </div>
                 <div class="col-md-6 ">
-                    <input id="userAge" class="form-control" placeholder="Enter Age">
+                    <input id="userAge" class="form-control" placeholder="Age">
                     <div id="ageAlert" class="alert mt-1 alert-danger">Enter valid Age</div>
                 </div>
                 <div class="col-md-6 ">
-                    <input id="userPassword" type="password" class="form-control" placeholder="Enter Password">
+                    <input id="userPassword" type="password" class="form-control" placeholder="Password">
                     <div id="passwordAlert" class="alert mt-1 alert-danger">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
                 </div>
                 <div class="col-md-6 ">
-                    <input id="userRePassword" type="password" class="form-control" placeholder="Enter RePassword">
+                    <input id="userRePassword" type="password" class="form-control" placeholder="RePassword">
                     <div id="rePasswordAlert" class="alert mt-1 alert-danger">Enter valid Repassword</div>
                 </div>
             </div>
