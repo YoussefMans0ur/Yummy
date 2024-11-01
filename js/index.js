@@ -119,8 +119,8 @@ $(document).ready(function () {
                         <div class="layer w-100 h-100">
                             <div class="d-flex h-100 align-items-center">
                                 <div class="info p-2">
-                                    <h2 class="fw-bold">${responseCategories.categories[i].strCategory}</h2>
-                                    <p>${responseCategories.categories[i].strCategoryDescription.split(' ').splice(0,maxWords).join(' ')}</p>
+                                    <h2 class="fw-bold animation-display">${responseCategories.categories[i].strCategory}</h2>
+                                    <p class="animation-display">${responseCategories.categories[i].strCategoryDescription.split(' ').splice(0,maxWords).join(' ')}</p>
                                 </div>
                             </div>
                         </div>

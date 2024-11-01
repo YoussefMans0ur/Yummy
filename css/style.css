@@ -127,17 +127,17 @@ body
     cursor: pointer;
 
 }
-.layer h2,p {
+.animation-display {
     opacity: 0;
     transition: opacity 0.5s;
 }
+.post:hover .animation-display
+{
+    opacity: 1;
+}   
 .post:hover .layer
 {
     top: 0%;
-}   
-.post:hover .layer h2, .post:hover .layer p
-{
-    opacity: 1;
 }   
 #searchContainer
 {
